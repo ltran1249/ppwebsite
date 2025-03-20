@@ -57,6 +57,7 @@ nav ul li a {
 #about {
     background: #fff;
     padding: 20px 0;
+    text-align: center;
 }
 
 /* Projects Section */
@@ -66,23 +67,24 @@ nav ul li a {
 
 .project-grid {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .project {
     background: #fff;
     padding: 20px;
-    margin: 10px 0;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    width: 80%;
-    max-width: 600px;
+    width: 300px;
+    border-radius: 10px;
 }
 
 .project img {
     max-width: 100%;
     height: auto;
+    border-radius: 10px;
 }
 
 /* Skills Section */
@@ -94,13 +96,16 @@ nav ul li a {
 #skills ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
 
 #skills ul li {
     background: #fff;
-    margin: 5px 0;
+    margin: 5px auto;
     padding: 10px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    border-radius: 5px;
 }
 
 /* Footer Styles */
@@ -115,4 +120,8 @@ footer {
 footer a {
     color: #fff;
     text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
